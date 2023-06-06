@@ -10,7 +10,10 @@ import dotenv from "dotenv";
  * -c 2 -p [{"id":"3a703c96-0d2b-cf0e-894e-70af0647cac8","type":"category","value":"2","target":["variable",["template-tag","id_num"]]}]
  */
 program
-  .requiredOption("-c, --config <char>", "metabase question の id 数字部分")
+  .requiredOption(
+    "-c, --config <char>",
+    "metabase question 設定ファイル.このファイルからの相対パス"
+  )
   .option("-e --env_name <char>", "環境名")
   .option(
     "--use_cache",

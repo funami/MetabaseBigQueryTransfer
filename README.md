@@ -46,7 +46,7 @@ parameters は、省略可能
 
 ```
 cd <リポジトリルート=package.jsonと同階層>
-node ./dist/metabase-bigquery-transfer.js -c sample/config.json
+node ./dist/metabase-bigquery-transfer.js -c config/sample.json
 ```
 
 しばし待つ
