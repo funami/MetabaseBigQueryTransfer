@@ -1,0 +1,475 @@
+{
+  "description": null,
+  "archived": false,
+  "collection_position": null,
+  "table_id": 5,
+  "result_metadata": [
+    {
+      "description": "A unique identifier given to each user.",
+      "semantic_type": "type/PK",
+      "table_id": 5,
+      "coercion_strategy": null,
+      "name": "ID",
+      "settings": null,
+      "source": "fields",
+      "field_ref": ["field", 32, null],
+      "effective_type": "type/BigInteger",
+      "nfc_path": null,
+      "parent_id": null,
+      "id": 32,
+      "visibility_type": "normal",
+      "display_name": "ID",
+      "fingerprint": null,
+      "base_type": "type/BigInteger"
+    },
+    {
+      "description": "The street address of the account’s billing address",
+      "semantic_type": null,
+      "table_id": 5,
+      "coercion_strategy": null,
+      "name": "ADDRESS",
+      "settings": null,
+      "source": "fields",
+      "field_ref": ["field", 34, null],
+      "effective_type": "type/Text",
+      "nfc_path": null,
+      "parent_id": null,
+      "id": 34,
+      "visibility_type": "normal",
+      "display_name": "Address",
+      "fingerprint": {
+        "global": {
+          "distinct-count": 2490,
+          "nil%": 0
+        },
+        "type": {
+          "type/Text": {
+            "percent-json": 0,
+            "percent-url": 0,
+            "percent-email": 0,
+            "percent-state": 0,
+            "average-length": 20.85
+          }
+        }
+      },
+      "base_type": "type/Text"
+    },
+    {
+      "description": "The contact email for the account.",
+      "semantic_type": "type/Email",
+      "table_id": 5,
+      "coercion_strategy": null,
+      "name": "EMAIL",
+      "settings": null,
+      "source": "fields",
+      "field_ref": ["field", 33, null],
+      "effective_type": "type/Text",
+      "nfc_path": null,
+      "parent_id": null,
+      "id": 33,
+      "visibility_type": "normal",
+      "display_name": "Email",
+      "fingerprint": {
+        "global": {
+          "distinct-count": 2500,
+          "nil%": 0
+        },
+        "type": {
+          "type/Text": {
+            "percent-json": 0,
+            "percent-url": 0,
+            "percent-email": 1,
+            "percent-state": 0,
+            "average-length": 24.1824
+          }
+        }
+      },
+      "base_type": "type/Text"
+    },
+    {
+      "description": "This is the salted password of the user. It should not be visible",
+      "semantic_type": null,
+      "table_id": 5,
+      "coercion_strategy": null,
+      "name": "PASSWORD",
+      "settings": null,
+      "source": "fields",
+      "field_ref": ["field", 40, null],
+      "effective_type": "type/Text",
+      "nfc_path": null,
+      "parent_id": null,
+      "id": 40,
+      "visibility_type": "normal",
+      "display_name": "Password",
+      "fingerprint": {
+        "global": {
+          "distinct-count": 2500,
+          "nil%": 0
+        },
+        "type": {
+          "type/Text": {
+            "percent-json": 0,
+            "percent-url": 0,
+            "percent-email": 0,
+            "percent-state": 0,
+            "average-length": 36
+          }
+        }
+      },
+      "base_type": "type/Text"
+    },
+    {
+      "description": "The name of the user who owns an account",
+      "semantic_type": "type/Name",
+      "table_id": 5,
+      "coercion_strategy": null,
+      "name": "NAME",
+      "settings": null,
+      "source": "fields",
+      "field_ref": ["field", 35, null],
+      "effective_type": "type/Text",
+      "nfc_path": null,
+      "parent_id": null,
+      "id": 35,
+      "visibility_type": "normal",
+      "display_name": "Name",
+      "fingerprint": {
+        "global": {
+          "distinct-count": 2499,
+          "nil%": 0
+        },
+        "type": {
+          "type/Text": {
+            "percent-json": 0,
+            "percent-url": 0,
+            "percent-email": 0,
+            "percent-state": 0,
+            "average-length": 13.532
+          }
+        }
+      },
+      "base_type": "type/Text"
+    },
+    {
+      "description": "The city of the account’s billing address",
+      "semantic_type": "type/City",
+      "table_id": 5,
+      "coercion_strategy": null,
+      "name": "CITY",
+      "settings": null,
+      "source": "fields",
+      "field_ref": ["field", 36, null],
+      "effective_type": "type/Text",
+      "nfc_path": null,
+      "parent_id": null,
+      "id": 36,
+      "visibility_type": "normal",
+      "display_name": "City",
+      "fingerprint": {
+        "global": {
+          "distinct-count": 1966,
+          "nil%": 0
+        },
+        "type": {
+          "type/Text": {
+            "percent-json": 0,
+            "percent-url": 0,
+            "percent-email": 0,
+            "percent-state": 0.002,
+            "average-length": 8.284
+          }
+        }
+      },
+      "base_type": "type/Text"
+    },
+    {
+      "description": "This is the longitude of the user on sign-up. It might be updated in the future to the last seen location.",
+      "semantic_type": "type/Longitude",
+      "table_id": 5,
+      "coercion_strategy": null,
+      "name": "LONGITUDE",
+      "settings": null,
+      "source": "fields",
+      "field_ref": ["field", 43, null],
+      "effective_type": "type/Float",
+      "nfc_path": null,
+      "parent_id": null,
+      "id": 43,
+      "visibility_type": "normal",
+      "display_name": "Longitude",
+      "fingerprint": {
+        "global": {
+          "distinct-count": 2491,
+          "nil%": 0
+        },
+        "type": {
+          "type/Number": {
+            "min": -166.5425726,
+            "q1": -101.58350792373135,
+            "q3": -84.65289348288829,
+            "max": -67.96735199999999,
+            "sd": 15.399698968175663,
+            "avg": -95.18741780363999
+          }
+        }
+      },
+      "base_type": "type/Float"
+    },
+    {
+      "description": "The state or province of the account’s billing address",
+      "semantic_type": "type/State",
+      "table_id": 5,
+      "coercion_strategy": null,
+      "name": "STATE",
+      "settings": null,
+      "source": "fields",
+      "field_ref": ["field", 39, null],
+      "effective_type": "type/Text",
+      "nfc_path": null,
+      "parent_id": null,
+      "id": 39,
+      "visibility_type": "normal",
+      "display_name": "State",
+      "fingerprint": {
+        "global": {
+          "distinct-count": 49,
+          "nil%": 0
+        },
+        "type": {
+          "type/Text": {
+            "percent-json": 0,
+            "percent-url": 0,
+            "percent-email": 0,
+            "percent-state": 1,
+            "average-length": 2
+          }
+        }
+      },
+      "base_type": "type/Text"
+    },
+    {
+      "description": "The channel through which we acquired this user. Valid values include: Affiliate, Facebook, Google, Organic and Twitter",
+      "semantic_type": "type/Source",
+      "table_id": 5,
+      "coercion_strategy": null,
+      "name": "SOURCE",
+      "settings": null,
+      "source": "fields",
+      "field_ref": ["field", 37, null],
+      "effective_type": "type/Text",
+      "nfc_path": null,
+      "parent_id": null,
+      "id": 37,
+      "visibility_type": "normal",
+      "display_name": "Source",
+      "fingerprint": {
+        "global": {
+          "distinct-count": 5,
+          "nil%": 0
+        },
+        "type": {
+          "type/Text": {
+            "percent-json": 0,
+            "percent-url": 0,
+            "percent-email": 0,
+            "percent-state": 0,
+            "average-length": 7.4084
+          }
+        }
+      },
+      "base_type": "type/Text"
+    },
+    {
+      "description": "The date of birth of the user",
+      "semantic_type": null,
+      "table_id": 5,
+      "coercion_strategy": null,
+      "unit": "default",
+      "name": "BIRTH_DATE",
+      "settings": null,
+      "source": "fields",
+      "field_ref": [
+        "field",
+        42,
+        {
+          "temporal-unit": "default"
+        }
+      ],
+      "effective_type": "type/Date",
+      "nfc_path": null,
+      "parent_id": null,
+      "id": 42,
+      "visibility_type": "normal",
+      "display_name": "Birth Date",
+      "fingerprint": {
+        "global": {
+          "distinct-count": 2308,
+          "nil%": 0
+        },
+        "type": {
+          "type/DateTime": {
+            "earliest": "1958-04-26",
+            "latest": "2000-04-03"
+          }
+        }
+      },
+      "base_type": "type/Date"
+    },
+    {
+      "description": "The postal code of the account’s billing address",
+      "semantic_type": "type/ZipCode",
+      "table_id": 5,
+      "coercion_strategy": null,
+      "name": "ZIP",
+      "settings": null,
+      "source": "fields",
+      "field_ref": ["field", 41, null],
+      "effective_type": "type/Text",
+      "nfc_path": null,
+      "parent_id": null,
+      "id": 41,
+      "visibility_type": "normal",
+      "display_name": "Zip",
+      "fingerprint": {
+        "global": {
+          "distinct-count": 2234,
+          "nil%": 0
+        },
+        "type": {
+          "type/Text": {
+            "percent-json": 0,
+            "percent-url": 0,
+            "percent-email": 0,
+            "percent-state": 0,
+            "average-length": 5
+          }
+        }
+      },
+      "base_type": "type/Text"
+    },
+    {
+      "description": "This is the latitude of the user on sign-up. It might be updated in the future to the last seen location.",
+      "semantic_type": "type/Latitude",
+      "table_id": 5,
+      "coercion_strategy": null,
+      "name": "LATITUDE",
+      "settings": null,
+      "source": "fields",
+      "field_ref": ["field", 38, null],
+      "effective_type": "type/Float",
+      "nfc_path": null,
+      "parent_id": null,
+      "id": 38,
+      "visibility_type": "normal",
+      "display_name": "Latitude",
+      "fingerprint": {
+        "global": {
+          "distinct-count": 2491,
+          "nil%": 0
+        },
+        "type": {
+          "type/Number": {
+            "min": 25.775827,
+            "q1": 35.302705923023126,
+            "q3": 43.773802584662,
+            "max": 70.6355001,
+            "sd": 6.390832341883712,
+            "avg": 39.87934670484002
+          }
+        }
+      },
+      "base_type": "type/Float"
+    },
+    {
+      "description": "The date the user record was created. Also referred to as the user’s \"join date\"",
+      "semantic_type": "type/CreationTimestamp",
+      "table_id": 5,
+      "coercion_strategy": null,
+      "unit": "default",
+      "name": "CREATED_AT",
+      "settings": null,
+      "source": "fields",
+      "field_ref": [
+        "field",
+        31,
+        {
+          "temporal-unit": "default"
+        }
+      ],
+      "effective_type": "type/DateTime",
+      "nfc_path": null,
+      "parent_id": null,
+      "id": 31,
+      "visibility_type": "normal",
+      "display_name": "Created At",
+      "fingerprint": {
+        "global": {
+          "distinct-count": 2500,
+          "nil%": 0
+        },
+        "type": {
+          "type/DateTime": {
+            "earliest": "2016-04-19T21:35:18.752Z",
+            "latest": "2019-04-19T14:06:27.3Z"
+          }
+        }
+      },
+      "base_type": "type/DateTime"
+    }
+  ],
+  "creator": {
+    "email": "myokya972@fuwari.be",
+    "first_name": "Takao",
+    "last_login": "2023-06-02T12:53:55.984357",
+    "is_qbnewb": true,
+    "is_superuser": true,
+    "id": 1,
+    "last_name": "Funami",
+    "date_joined": "2023-06-02T12:02:42.137497",
+    "common_name": "Takao Funami"
+  },
+  "can_write": true,
+  "database_id": 1,
+  "enable_embedding": false,
+  "collection_id": null,
+  "query_type": "query",
+  "name": "People",
+  "last_query_start": null,
+  "dashboard_count": 0,
+  "average_query_time": null,
+  "creator_id": 1,
+  "moderation_reviews": [],
+  "updated_at": "2023-06-02T13:59:31.637769Z",
+  "made_public_by_id": null,
+  "embedding_params": null,
+  "cache_ttl": null,
+  "dataset_query": {
+    "database": 1,
+    "query": {
+      "source-table": 5
+    },
+    "type": "query"
+  },
+  "id": 1,
+  "parameter_mappings": [],
+  "display": "table",
+  "entity_id": "5a244CIHDisWOk7GHZcgg",
+  "collection_preview": true,
+  "last-edit-info": {
+    "id": 1,
+    "email": "myokya972@fuwari.be",
+    "first_name": "Takao",
+    "last_name": "Funami",
+    "timestamp": "2023-06-02T13:59:32.159501Z"
+  },
+  "visualization_settings": {
+    "table.pivot_column": "SOURCE",
+    "table.cell_column": "LONGITUDE"
+  },
+  "collection": null,
+  "parameters": [],
+  "dataset": false,
+  "created_at": "2023-06-02T13:59:31.637769",
+  "parameter_usage_count": 0,
+  "public_uuid": null
+}

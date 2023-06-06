@@ -1,0 +1,230 @@
+{
+  "description": null,
+  "archived": false,
+  "collection_position": null,
+  "table_id": null,
+  "result_metadata": [
+    {
+      "display_name": "ID",
+      "field_ref": ["field", "ID", { "base-type": "type/BigInteger" }],
+      "name": "ID",
+      "base_type": "type/BigInteger",
+      "effective_type": "type/BigInteger",
+      "semantic_type": "type/PK",
+      "fingerprint": null
+    },
+    {
+      "display_name": "EAN",
+      "field_ref": ["field", "EAN", { "base-type": "type/Text" }],
+      "name": "EAN",
+      "base_type": "type/Text",
+      "effective_type": "type/Text",
+      "semantic_type": null,
+      "fingerprint": {
+        "global": { "distinct-count": 1, "nil%": 0.0 },
+        "type": {
+          "type/Text": {
+            "percent-json": 0.0,
+            "percent-url": 0.0,
+            "percent-email": 0.0,
+            "percent-state": 0.0,
+            "average-length": 13.0
+          }
+        }
+      }
+    },
+    {
+      "display_name": "TITLE",
+      "field_ref": ["field", "TITLE", { "base-type": "type/Text" }],
+      "name": "TITLE",
+      "base_type": "type/Text",
+      "effective_type": "type/Text",
+      "semantic_type": "type/Title",
+      "fingerprint": {
+        "global": { "distinct-count": 1, "nil%": 0.0 },
+        "type": {
+          "type/Text": {
+            "percent-json": 0.0,
+            "percent-url": 0.0,
+            "percent-email": 0.0,
+            "percent-state": 0.0,
+            "average-length": 18.0
+          }
+        }
+      }
+    },
+    {
+      "display_name": "CATEGORY",
+      "field_ref": ["field", "CATEGORY", { "base-type": "type/Text" }],
+      "name": "CATEGORY",
+      "base_type": "type/Text",
+      "effective_type": "type/Text",
+      "semantic_type": null,
+      "fingerprint": {
+        "global": { "distinct-count": 1, "nil%": 0.0 },
+        "type": {
+          "type/Text": {
+            "percent-json": 0.0,
+            "percent-url": 0.0,
+            "percent-email": 0.0,
+            "percent-state": 0.0,
+            "average-length": 9.0
+          }
+        }
+      }
+    },
+    {
+      "display_name": "VENDOR",
+      "field_ref": ["field", "VENDOR", { "base-type": "type/Text" }],
+      "name": "VENDOR",
+      "base_type": "type/Text",
+      "effective_type": "type/Text",
+      "semantic_type": "type/Company",
+      "fingerprint": {
+        "global": { "distinct-count": 1, "nil%": 0.0 },
+        "type": {
+          "type/Text": {
+            "percent-json": 0.0,
+            "percent-url": 0.0,
+            "percent-email": 0.0,
+            "percent-state": 0.0,
+            "average-length": 20.0
+          }
+        }
+      }
+    },
+    {
+      "display_name": "PRICE",
+      "field_ref": ["field", "PRICE", { "base-type": "type/Float" }],
+      "name": "PRICE",
+      "base_type": "type/Float",
+      "effective_type": "type/Float",
+      "semantic_type": null,
+      "fingerprint": {
+        "global": { "distinct-count": 1, "nil%": 0.0 },
+        "type": {
+          "type/Number": {
+            "min": 70.07989613071763,
+            "q1": 70.07989613071763,
+            "q3": 70.07989613071763,
+            "max": 70.07989613071763,
+            "sd": null,
+            "avg": 70.07989613071763
+          }
+        }
+      }
+    },
+    {
+      "display_name": "RATING",
+      "field_ref": ["field", "RATING", { "base-type": "type/Float" }],
+      "name": "RATING",
+      "base_type": "type/Float",
+      "effective_type": "type/Float",
+      "semantic_type": "type/Score",
+      "fingerprint": {
+        "global": { "distinct-count": 1, "nil%": 0.0 },
+        "type": {
+          "type/Number": {
+            "min": 0.0,
+            "q1": 0.0,
+            "q3": 0.0,
+            "max": 0.0,
+            "sd": null,
+            "avg": 0.0
+          }
+        }
+      }
+    },
+    {
+      "display_name": "CREATED_AT",
+      "field_ref": ["field", "CREATED_AT", { "base-type": "type/DateTime" }],
+      "name": "CREATED_AT",
+      "base_type": "type/DateTime",
+      "effective_type": "type/DateTime",
+      "semantic_type": "type/CreationTimestamp",
+      "fingerprint": {
+        "global": { "distinct-count": 1, "nil%": 0.0 },
+        "type": {
+          "type/DateTime": {
+            "earliest": "2019-04-11T08:49:35.932Z",
+            "latest": "2019-04-11T08:49:35.932Z"
+          }
+        }
+      }
+    }
+  ],
+  "creator": {
+    "email": "myokya972@fuwari.be",
+    "first_name": "Takao",
+    "last_login": "2023-06-03T08:23:13.134311",
+    "is_qbnewb": false,
+    "is_superuser": true,
+    "id": 1,
+    "last_name": "Funami",
+    "date_joined": "2023-06-02T12:02:42.137497",
+    "common_name": "Takao Funami"
+  },
+  "can_write": true,
+  "database_id": 1,
+  "enable_embedding": false,
+  "collection_id": null,
+  "query_type": "native",
+  "name": "hello",
+  "last_query_start": "2023-06-05T07:42:41.278177Z",
+  "dashboard_count": 0,
+  "average_query_time": 95.4,
+  "creator_id": 1,
+  "moderation_reviews": [],
+  "updated_at": "2023-06-05T06:24:26.953286Z",
+  "made_public_by_id": null,
+  "embedding_params": null,
+  "cache_ttl": null,
+  "dataset_query": {
+    "database": 1,
+    "native": {
+      "template-tags": {
+        "id_num": {
+          "id": "3a703c96-0d2b-cf0e-894e-70af0647cac8",
+          "name": "id_num",
+          "display-name": "Id num",
+          "type": "text",
+          "required": true,
+          "default": "3"
+        }
+      },
+      "query": "SELECT * FROM products WHERE id = {{id_num}}"
+    },
+    "type": "native"
+  },
+  "id": 2,
+  "parameter_mappings": [],
+  "display": "table",
+  "entity_id": "awcNF9Rht0nsOZ-84WCkL",
+  "collection_preview": true,
+  "last-edit-info": {
+    "id": 1,
+    "email": "myokya972@fuwari.be",
+    "first_name": "Takao",
+    "last_name": "Funami",
+    "timestamp": "2023-06-05T06:23:38.668927Z"
+  },
+  "visualization_settings": {
+    "table.pivot_column": "CATEGORY",
+    "table.cell_column": "ID"
+  },
+  "collection": null,
+  "parameters": [
+    {
+      "id": "3a703c96-0d2b-cf0e-894e-70af0647cac8",
+      "type": "category",
+      "target": ["variable", ["template-tag", "id_num"]],
+      "name": "Id num",
+      "slug": "id_num",
+      "default": "3"
+    }
+  ],
+  "dataset": false,
+  "created_at": "2023-06-03T08:20:03.290624",
+  "parameter_usage_count": 0,
+  "public_uuid": null
+}

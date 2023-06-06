@@ -128,3 +128,8 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+.env
+.env.test
+__tests__/tmp
+.DS_Store

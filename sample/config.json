@@ -1,0 +1,25 @@
+{
+  "card_id": 1,
+  "parameters": [
+    {
+      "type": "date/single",
+      "value": "2023-01-01",
+      "target": ["variable", ["template-tag", "start_date"]],
+      "id": "a5c46543-e9b5-8881-887b-e537df8c69be"
+    },
+    {
+      "type": "date/single",
+      "value": "2023-12-31",
+      "target": ["variable", ["template-tag", "end_date"]],
+      "id": "e5658a7b-2311-db9c-6c6e-6e06e80asedr"
+    }
+  ],
+  "schema_field_name_index": {
+    "作成日": "created_at",
+    "コード": "code",
+    "内容": "sale_type",
+    "ステータス": "order_status",
+    "件数": "count",
+    "金額": "amount"
+  }
+}
