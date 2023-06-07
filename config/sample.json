@@ -11,5 +11,6 @@
   "schema_field_name_index": {
     "タイトル": "title",
     "カテゴリ": "category"
-  }
+  },
+  "bigquery_table_suffix": "2023"
 }

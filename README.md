@@ -54,6 +54,7 @@ BIGQUERY_LOCATION=asia-northeast1
 sample/config.json を参考に、問い合わせる質問(card)ID と parameters を設定
 parameters は、省略可能
 質問のレスポンスフィールド名が英数字以外のときは、schema_field_name_index にて、名前の変換設定を行う
+bigquery_table_sufix(省略可能)を指定すると、bigquery のテーブル名の後ろに "\*" + bigquery_table_sufix が付与される
 
 ### 例
 
@@ -82,7 +83,8 @@ WHERE id = {{id_num}}
   "schema_field_name_index": {
     "タイトル": "title",
     "カテゴリ": "category"
-  }
+  },
+  "bigquery_table_suffix": "2023"
 }
 ```
 
@@ -98,6 +100,40 @@ node ./dist/metabase-bigquery-transfer.js -c config/sample.json
 - metabase export sucess
 - bigquery import sucess  
   のログが表示されれば成功
+
+例:
+
+```
+metabase export sucess  {
+  "schema": {
+    "type": "record",
+    "name": "metabase_card_2_hello",
+    "fields": [
+      {
+        "name": "ID",
+        "type": "long",
+        "doc": "ID"
+      },
+      {
+        "name": "title",
+        "type": "string",
+        "doc": "タイトル"
+      },
+      {
+        "name": "category",
+        "type": "string",
+        "doc": "カテゴリ"
+      }
+    ]
+  },
+  "outAvroFile": "/tmp/metabase-temp/metabase_card_2_hello.avro",
+  "length": 1
+}
+bigquery import sucess  {
+  "table": "testbq.datalake.metabase_card_2_hello_2023",
+  "jobId": "testbq:asia-northeast1.4c0e137e-17a7-4078-a42c-6d723145d7ab"
+}
+```
 
 # test
 
