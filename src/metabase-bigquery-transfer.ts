@@ -39,6 +39,7 @@ const config = fs.readJSONSync(path.join(__dirname, "..", options.config));
 const cardId = parseInt(config.card_id);
 const parameters = JSON.stringify(config.parameters);
 const schemaFieldNameIndex = config.schema_field_name_index;
+const bigQueryTableSuffix = config.bigquery_table_suffix;
 const useCache = options.use_cache ? true : false;
 console.log({
   GOOGLE_APPLICATION_CREDENTIALS,
@@ -52,6 +53,7 @@ console.log({
   parameters: parameters,
   useCache,
   schemaFieldNameIndex,
+  bigQueryTableSuffix,
 });
 if (
   !username ||
@@ -100,7 +102,12 @@ const main = async () => {
 main()
   .then(async (result) => {
     console.log("metabase export sucess ", JSON.stringify(result, null, 2));
-    return bq.importAvroToBigQuery(result.outAvroFile, result.schema.name);
+    return bq.importAvroToBigQuery(
+      result.outAvroFile,
+      bigQueryTableSuffix
+        ? [result.schema.name, bigQueryTableSuffix].join("_")
+        : result.schema.name
+    );
   })
   .then((result) => {
     console.log("bigquery import sucess ", JSON.stringify(result, null, 2));
